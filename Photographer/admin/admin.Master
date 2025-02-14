@@ -1,0 +1,245 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="Photographer.admin.admin" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+            <%--sweetalert refernces--%>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+      <style>
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif; /* More modern font */
+    background-color: #eef2f3; /* Light, clean background */
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #343a40; /* Dark theme for sidebar */
+    padding-top: 1rem;
+    box-shadow: 3px 0 5px rgba(0,0,0,0.1); /* Add subtle shadow */
+}
+
+.sidebar .nav-link {
+    color: #000000; /* Softer gray for text */
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.9rem 1.2rem;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s;
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+/* Hover effect for menus */
+.sidebar .nav-link:hover {
+    background-color: #495057; /* Slightly lighter gray */
+    color: #ffffff;
+    transform: translateX(5px); /* Slide effect */
+}
+
+/* Active menu item styling */
+.sidebar .nav-link.active {
+    color: #ffffff;
+    background-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Logout Button Style */
+.logout-btn {
+    color: #ffffff;
+    background-color: #e63946; /* Slightly brighter red */
+    padding: 0.9rem 1.2rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.logout-btn:hover {
+    background-color: #d62828; /* Darker red */
+}
+
+/* Main Content Header */
+.h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; /* White cards for a clean look */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
+/* Sidebar Scroll */
+.sidebar-sticky {
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+    .h2 {
+        font-size: 1.8rem;
+    }
+}
+
+</style>
+
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid" >
+            <div class="row">
+                <!-- Sidebar -->
+                <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light sidebar" >
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <!-- Home Menu -->
+                            <li class="nav-item" >
+                                <a class="nav-link <%# Page.Title == "Home" ? "active" : "" %>" href="dashboard.aspx">
+                                    <i class="fas fa-home"></i> Home
+                                </a>
+                            </li>
+
+                            <!-- Bookings Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link <%# Page.Title == "Bookings" ? "active" : "" %>" href="bookings.aspx">
+                                    <i class="fas fa-calendar-check"></i> Bookings
+                                </a>
+                            </li>
+
+                             <!-- upcoming Bookings Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link <%# Page.Title == "Upcoming Events" ? "active" : "" %>" href="upcomingWork.aspx">
+                                        <i class="fas fa-calendar-check"></i> Upcoming Events
+                                </a>
+                            </li>
+
+                             <!-- rejected Bookings Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link <%# Page.Title == "Rejected Events" ? "active" : "" %>" href="rejected.aspx">
+                                        <i class="fas fa-calendar-check"></i> Rejected Events
+                                </a>
+                            </li>
+
+                            <!-- Team Menu (Newly Added) -->
+                            <li class="nav-item">
+                                <a class="nav-link <%# Page.Title == "Team" ? "active" : "" %>" href="team.aspx">
+                                    <i class="fas fa-users"></i> Team
+                                </a>
+                            </li>
+
+                            <!-- Add Photo Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link <%# Page.Title == "Add Photo" ? "active" : "" %>" href="manage_photos.aspx">
+                                    <i class="fas fa-camera"></i> Add Photo
+                                </a>
+                            </li>
+
+                            <!-- Add Video Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link <%# Page.Title == "Add Video" ? "active" : "" %>" href="manage_videos.aspx">
+                                    <i class="fas fa-video"></i> Add Video
+                                </a>
+                            </li>
+
+                            <!-- Enquiries Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link <%# Page.Title == "Enquiries" ? "active" : "" %>" href="enquiries.aspx">
+                                    <i class="fas fa-envelope"></i> Enquiries
+                                </a>
+                            </li>
+
+                            <!-- Work History Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link <%# Page.Title == "Work History" ? "active" : "" %>" href="completedwork.aspx">
+                                    <i class="fas fa-history"></i> Work History
+                                </a>
+                            </li>
+
+                            <!-- Logout Button -->
+                            <li class="nav-item mt-auto">
+                                <asp:Button runat="server" ID="btnLogout" CssClass="btn btn-danger" onClick="btnLogout_Click" Text="Log-Out" />
+                                    
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Main Content Area -->
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">
+                             <%: String.IsNullOrEmpty(Page.Title) ? "Hey, Atharva !" : Page.Title %>
+                        </h1>
+
+                    </div>
+                    <!-- Main content placeholder -->
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                </main>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </form>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+</body>
+</html>
+

@@ -1,0 +1,220 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user.master.cs" Inherits="Photographer.user.user" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+   
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+ 
+   <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        /* Footer Custom Styles */
+        .footer {
+    background: linear-gradient(135deg, #111, #333);
+    padding: 50px 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: #1c73e3;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.footer h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1c73e3;
+    letter-spacing: 1px;
+}
+.footer p, .footer li {
+    font-size: 14px;
+}
+.footer .contact-info i {
+    color: #1c73e3;
+    margin-right: 10px;
+}
+.footer .social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 30px; /* Increased the size */
+    color: #fff;  /* Applied white color */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.footer .social-links a:hover {
+    color: #f8d800;
+    transform: scale(1.2);
+}
+.footer .social-links {
+    margin-top: 20px;
+}
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+.footer ul li {
+    margin-bottom: 10px;
+}
+/* Divider Line */
+.footer-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #1c73e3;
+    opacity: 0.8;
+    margin: 20px 0;
+}
+/* Copyright Section */
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    padding: 10px 0;
+    background-color: #222;
+}
+/* Responsive */
+@media (max-width: 767px) {
+    .footer h5 {
+        font-size: 16px;
+    }
+    .footer p, .footer li {
+        font-size: 12px;
+    }
+    .footer .social-links a {
+        font-size: 24px;  /* Adjust icon size for smaller screens */
+    }
+}
+
+    </style>
+
+    <link href="../css/StyleSheet1-Home%20page.css" rel="stylesheet" />
+
+        <%--sweetalert refernces--%>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+
+
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand" href="../admin/login.aspx">agamya studios</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.aspx">Home</a>
+                </li>
+               
+                 <li class="nav-item">
+                        <a class="nav-link" href="services.aspx">Services</a>
+                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="equipments.aspx">Equipments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.aspx">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.aspx">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallary.aspx">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-book" href="book_event.aspx">Book</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+
+
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+   <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links Section -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.aspx">Home</a></li>
+                        <li><a href="about.aspx">About</a></li>
+                        <li><a href="contact.aspx">Contact</a></li>
+                        <li><a href="book_event.aspx">Book</a></li>
+                        <li><a href="services.aspx">Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="col-md-4 col-sm-6 mb-4 contact-info">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 122, Agamya Studios, North City Plaza</p>
+                    <p><i class="fas fa-envelope"></i> agamyastudios@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> (555) 123-4567</p>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider Line -->
+            <div class="footer-divider"></div>
+
+            <!-- Copyright Section -->
+            <div class="row">
+                <div class="col text-center">
+                    <p>&copy; 2024 Agamya Studio. All rights reserved @tharva.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

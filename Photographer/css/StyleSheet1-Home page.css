@@ -1,0 +1,111 @@
+﻿
+/*body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f5f5, #d6eaf8);
+    margin: 0;
+    padding: 0;
+}*/
+
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #343a40 !important;
+}
+
+.nav-link {
+    color: #343a40 !important;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+    .nav-link:hover {
+        color: #007bff !important;
+    }
+
+
+
+.btn-book {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+    .btn-book:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+.specializations .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.specializations .card-text {
+    color: #6c757d;
+}
+
+.specialization-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(135deg, #f5f5f5, #d6eaf8);
+    border-radius: 15px;
+}
+
+    .specialization-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .specialization-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .specialization-card h4 {
+        color: #007bff;
+    }
+
+    .specialization-card p {
+        color: #555;
+    }
+
+.about-us {
+    background: linear-gradient(135deg, #f5f5f5, #d6eaf8);
+    
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.img-fluid {
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.rounded-square {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*#btnbook {
+    padding: 0.5rem 1rem;
+}
+*/

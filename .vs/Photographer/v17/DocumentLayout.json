@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MCA\\Photographer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|D:\\MCA\\Photographer\\photographer\\admin\\bookings.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|solutionrelative:photographer\\admin\\bookings.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|D:\\MCA\\Photographer\\photographer\\admin\\rejected.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|solutionrelative:photographer\\admin\\rejected.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|D:\\MCA\\Photographer\\photographer\\admin\\completedwork.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|solutionrelative:photographer\\admin\\completedwork.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|d:\\mca\\photographer\\photographer\\admin\\upcomingwork.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|solutionrelative:photographer\\admin\\upcomingwork.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|D:\\MCA\\Photographer\\photographer\\admin\\enquiries.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27E34B88-EBC7-4036-A856-B62447B168AB}|Photographer\\Photographer.csproj|solutionrelative:photographer\\admin\\enquiries.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "completedwork.aspx",
+              "DocumentMoniker": "D:\\MCA\\Photographer\\Photographer\\admin\\completedwork.aspx",
+              "RelativeDocumentMoniker": "Photographer\\admin\\completedwork.aspx",
+              "ToolTip": "D:\\MCA\\Photographer\\Photographer\\admin\\completedwork.aspx",
+              "RelativeToolTip": "Photographer\\admin\\completedwork.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-03T17:13:52.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "upcomingWork.aspx",
+              "DocumentMoniker": "D:\\MCA\\Photographer\\Photographer\\admin\\upcomingWork.aspx",
+              "RelativeDocumentMoniker": "Photographer\\admin\\upcomingWork.aspx",
+              "ToolTip": "D:\\MCA\\Photographer\\Photographer\\admin\\upcomingWork.aspx",
+              "RelativeToolTip": "Photographer\\admin\\upcomingWork.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-03T17:05:52.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "rejected.aspx",
+              "DocumentMoniker": "D:\\MCA\\Photographer\\Photographer\\admin\\rejected.aspx",
+              "RelativeDocumentMoniker": "Photographer\\admin\\rejected.aspx",
+              "ToolTip": "D:\\MCA\\Photographer\\Photographer\\admin\\rejected.aspx",
+              "RelativeToolTip": "Photographer\\admin\\rejected.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-03T17:01:34.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "bookings.aspx",
+              "DocumentMoniker": "D:\\MCA\\Photographer\\Photographer\\admin\\bookings.aspx",
+              "RelativeDocumentMoniker": "Photographer\\admin\\bookings.aspx",
+              "ToolTip": "D:\\MCA\\Photographer\\Photographer\\admin\\bookings.aspx",
+              "RelativeToolTip": "Photographer\\admin\\bookings.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-03T16:52:27.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "enquiries.aspx",
+              "DocumentMoniker": "D:\\MCA\\Photographer\\Photographer\\admin\\enquiries.aspx",
+              "RelativeDocumentMoniker": "Photographer\\admin\\enquiries.aspx",
+              "ToolTip": "D:\\MCA\\Photographer\\Photographer\\admin\\enquiries.aspx",
+              "RelativeToolTip": "Photographer\\admin\\enquiries.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-03T16:42:51.269Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
